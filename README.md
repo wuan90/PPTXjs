@@ -1,7 +1,7 @@
 BUG:
-	1. pptx文件【设计】时，使用“母版”时报错“Uncaught TypeError: Cannot read properties of undefined (reading 'w')”
- 	   问题原因：pptx.js文件8220行pathNodes可能是一个数组（没有attrs属性）
-           规避方法：pathNodes变量重新赋值为数组中的第一个元素（pathNodes = Array.isArray(pathNodes) ? pathNodes[0] : pathNodes;）
+	*1. pptx文件【设计】时，使用“母版”时报错“Uncaught TypeError: Cannot read properties of undefined (reading 'w')”
+ 	   *问题原因：pptx.js文件8220行pathNodes可能是一个数组（没有attrs属性）
+           *规避方法：pathNodes变量重新赋值为数组中的第一个元素（pathNodes = Array.isArray(pathNodes) ? pathNodes[0] : pathNodes;）
 
 PPTXjs
 ==========
